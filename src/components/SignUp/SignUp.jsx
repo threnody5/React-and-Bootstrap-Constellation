@@ -43,13 +43,13 @@ export default function SignUp() {
   return (
     <div
       style={{
-        backgroundImage: 'url('+ background +')',
+        backgroundImage: 'url(' + background + ')',
         height: '100vh',
       }}
     >
       <div className='Auth-container justify-content-center text-center'>
-        <div className=''>
-          <h3 className='accountCreation text-white text-center'>Create an Account</h3>
+        <div>
+          <h3 className='text-white text-center'>Create an Account</h3>
           <div className='form-group mt-3'>
             <label className='text-white'>Full Name</label>
             <input
