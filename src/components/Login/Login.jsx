@@ -32,6 +32,17 @@ export default function Login() {
             />
           </div>
           <button className='btn btn-info text-dark mt-4'>Log In</button>
+          <br />
+          <div className='text-white text-center mt-4'>
+            Go back to{' '}
+            <a
+              href='/'
+              className='text-info'
+            >
+              Home
+            </a>{' '}
+            page
+          </div>
         </div>
       </div>
     </div>
