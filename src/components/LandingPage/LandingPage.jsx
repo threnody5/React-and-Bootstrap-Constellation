@@ -48,7 +48,7 @@ export default function LandingPage() {
               href='#'
               className='navbar-brand'
             ></a>
-            <p className='text-white'>Created by Threnody5</p>
+            <p className='text-white'>Created by <a href='https://github.com/threnody5/React-and-Bootstrap-Constellation' className='text-info text-decoration-none'>Threnody5</a></p>
           </div>
         </nav>
       </div>
