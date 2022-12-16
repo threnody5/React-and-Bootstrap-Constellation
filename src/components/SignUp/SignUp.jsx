@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import React, { useState } from 'react';
 import { authorization } from '../../FirebaseConfig';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { background } from '../../Background/Background';
 
 export default function SignUp() {
   const [emailAddress, setEmailAddress] = useState('');
@@ -42,7 +43,7 @@ export default function SignUp() {
   return (
     <div
       style={{
-        backgroundImage: "url('https://getwallpapers.com/wallpaper/full/7/8/d/280010.jpg')",
+        backgroundImage: 'url('+ background +')',
         height: '100vh',
       }}
     >

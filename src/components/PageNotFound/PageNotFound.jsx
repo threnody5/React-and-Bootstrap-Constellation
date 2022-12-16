@@ -1,11 +1,12 @@
 /** @format */
 
 import 'bootstrap/dist/css/bootstrap.css';
+import { background } from '../../Background/Background';
 
 export default function PageNotFound() {
   return (
     <div style={{
-      backgroundImage: "url('https://getwallpapers.com/wallpaper/full/7/8/d/280010.jpg')",
+      backgroundImage: 'url('+ background +')',
       height: '100vh'
     }}>
       <div>
