@@ -24,7 +24,7 @@ export default function LandingPage() {
                 href='login'
                 className='nav-link'
               >
-                <button className="btn btn-light text-dark">Login</button>
+                <button className='btn btn-light text-dark'>Login</button>
               </a>
             </li>
             <li className='nav-item'>
@@ -32,7 +32,7 @@ export default function LandingPage() {
                 href='signup'
                 className='nav-link'
               >
-                <button className="btn btn-light text-dark">Sign Up</button>
+                <button className='btn btn-light text-dark'>Sign Up</button>
               </a>
             </li>
           </ul>
@@ -40,6 +40,17 @@ export default function LandingPage() {
       </nav>
       <div className=''>
         <h1 className='welcome text-white text-center'>Welcome to the Stars!</h1>
+      </div>
+      <div>
+        <nav className='navbar fixed-bottom navbar-dark bg-transparent'>
+          <div className='container'>
+            <a
+              href='#'
+              className='navbar-brand'
+            ></a>
+            <p className='text-white'>Created by Threnody5</p>
+          </div>
+        </nav>
       </div>
     </div>
   );
