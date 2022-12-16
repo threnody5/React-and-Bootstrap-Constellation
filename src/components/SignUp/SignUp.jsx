@@ -1,7 +1,6 @@
 /** @format */
 
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-icons/font/bootstrap-icons';
 
 export default function SignUp() {
   return (
@@ -16,13 +15,11 @@ export default function SignUp() {
           <h3 className='accountCreation text-white text-center'>Create an Account</h3>
           <div className='form-group mt-3'>
             <label className='text-white'>Full Name</label>
-            {/* <i className="bi bi-envelope-at-fill icon-white"> */}
             <input
               type='text'
               className='form-control mt-1'
               placeholder='e.g. John Doe'
             />
-            {/* </i> */}
           </div>
           <div className='form-group mt-3'>
             <label className='text-white'>Email Address</label>
