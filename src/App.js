@@ -9,15 +9,32 @@ import LandingPage from './components/LandingPage/LandingPage';
 import SignUp from './components/SignUp/SignUp';
 import Login from './components/Login/Login';
 import PageNotFound from './components/PageNotFound/PageNotFound';
+import LoggedIn from './components/LoggedIn/LoggedIn';
 
-function App() {
+function App(props) {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<LandingPage />} />
-        <Route path='signup' element={<SignUp />} />
-        <Route path='login' element={<Login />} />
-        <Route path='*' element={<PageNotFound />} />
+        <Route
+          path='/'
+          element={<LandingPage />}
+        />
+        <Route
+          path='signup'
+          element={<SignUp />}
+        />
+        <Route
+          path='login'
+          element={<Login />}
+        />
+        <Route
+          path='loggedin'
+          element={<LoggedIn />}
+        />
+        <Route
+          path='*'
+          element={<PageNotFound />}
+        />
       </Routes>
     </Router>
   );
