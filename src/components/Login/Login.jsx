@@ -5,17 +5,35 @@ import React, { useState } from 'react';
 import { authorization } from '../../FirebaseConfig';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { background } from '../../Background/Background';
+import { useNavigate } from 'react-router-dom';
+import AuthGuard from '../AuthGuard/AuthGuard';
 
 export default function Login() {
-  const [emailAddress, setEmailAddress] = useState('');
-  const [password, setPassword] = useState('');
+  const [emailAddress, setEmailAddress] = useState('temp@temp.com');
+  const [password, setPassword] = useState('Temppassword');
+  const [currentUID, setCurrentUID] = useState();
+
+  console.log(currentUID);
+
+  const navigate = useNavigate();
 
   const LogInToAccount = () => {
     signInWithEmailAndPassword(authorization, emailAddress, password)
       .then((userCredentials) => {
         //* Signed in
         const user = userCredentials.user;
-        console.log(user);
+
+        if (user) {
+          var signedInUser = {
+            userToken: user.accessToken,
+            userID: user.uid,
+          };
+          if (signedInUser.userID) {
+            setCurrentUID(signedInUser.userID);
+            navigate('/loggedin');
+            // AuthGuard;
+          }
+        }
         window.alert('Logged in successfully');
         setEmailAddress('');
         setPassword('');
