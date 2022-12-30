@@ -11,7 +11,7 @@ import Login from './components/Login/Login';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 import LoggedIn from './components/LoggedIn/LoggedIn';
 
-function App(props) {
+function App() {
   return (
     <Router>
       <Routes>
