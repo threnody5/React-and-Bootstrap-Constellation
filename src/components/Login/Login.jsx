@@ -30,7 +30,7 @@ export default function Login() {
           };
           if (signedInUser.userID) {
             setCurrentUID(signedInUser.userID);
-            navigate('/loggedin');
+            navigate('/loggedin', { state: signedInUser.userID });
             // AuthGuard;
           }
         }
